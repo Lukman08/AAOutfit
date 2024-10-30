@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GuestController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('guest.index');
-});
-Route::get('/produk', function () {
-    return view('guest.produk');
-});
+
+// Guest
+Route::get('/', [GuestController::class, 'index'])->name('index');
+Route::get('/produk', [GuestController::class, 'produk'])->name('produk');
