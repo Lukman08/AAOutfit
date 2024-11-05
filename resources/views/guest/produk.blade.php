@@ -38,8 +38,19 @@
                         <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
                             <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
                             <div class="d-flex justify-content-center">
-                                <h6>$123.00</h6>
-                                <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                <h6>Rp. 123.00</h6>
+                                <h6 class="text-muted ml-2"><del> <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>Rp. 123.00</del></h6>
                             </div>
                         </div>
                         <div class="card-footer d-flex justify-content-between bg-light border">
