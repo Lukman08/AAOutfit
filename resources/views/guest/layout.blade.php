@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Aafashionstore</title>
+    <title>AAoutfit</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -67,7 +67,7 @@
                             <img src="{{ asset('guest/img/logo.png') }}" alt="Logo"
                                 style="height: 40px; width: auto;">
                         </span>
-                        <span style="margin-left: 5px;">Aafashionstore</span>
+                        <span style="margin-left: 5px;">AAoutfit</span>
                     </h1>
                 </a>
             </div>
@@ -126,7 +126,7 @@
                                 <img src="{{ asset('guest/img/logo.png') }}" alt="Logo"
                                     style="height: 40px; width: auto;">
                             </span>
-                            <span style="margin-left: 5px;">Aafashionstore</span>
+                            <span style="margin-left: 5px;">AAoutfit</span>
                         </h1>
                     </a>
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -178,12 +178,12 @@
                             <img src="{{ asset('guest/img/logo.png') }}" alt="Logo"
                                 style="height: 40px; width: auto;">
                         </span>
-                        <span style="margin-left: 5px;">Aafashionstore</span>
+                        <span style="margin-left: 5px;">AAoutfit</span>
                     </h1>
                 </a>
-                <p class="mt-3" style="text-align: justify; text-indent: 1em;">AAFASHIONSTORE adalah toko online
+                <p class="mt-3" style="text-align: justify; text-indent: 1em;">AAoutfit adalah toko online
                     dengan koleksi trendy dan nyaman untuk wanita dan anak. Dapatkan celana, rok, kemeja, tunik, serta
-                    pakaian dalam berkualitas dengan harga terbaik. Happy shopping di AAFASHIONSTORE!</p>
+                    pakaian dalam berkualitas dengan harga terbaik. Happy shopping di AAoutfit!</p>
             </div>
             <div class="col-lg-8 col-md-12">
                 <div class="row">
@@ -218,7 +218,7 @@
         <div class="row border-top border-light mx-xl-5 py-4">
             <div class="col-md-6 px-xl-0 text-center text-md-left">
                 <p class="mb-md-0 text-dark">
-                    &copy; <a class="text-dark font-weight-semi-bold" href="#">Aafashionstore</a>. All Rights
+                    &copy; <a class="text-dark font-weight-semi-bold" href="#">AAoutfit</a>. All Rights
                     Reserved. Redesigned
                     by <a class="text-dark font-weight-semi-bold" href="https://github.com/lukman08">Lukman Hakim</a>
                 </p>

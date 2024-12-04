@@ -12,7 +12,7 @@
                                 <img src="{{ asset('guest/img/logo.png') }}" alt="Logo"
                                     style="height: 40px; width: auto;">
                             </span>
-                            <span style="margin-left: 5px;">Aafashionstore</span>
+                            <span style="margin-left: 5px;">AAoutfit</span>
                         </h1>
                     </a>
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
