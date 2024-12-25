@@ -8,5 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     use HasFactory;
-    protected $fillable = ['noprod', 'nama','harga' ,'gambar','pop' ,'tiktok' ,'shopee'];
+    protected $fillable = ['noprod', 'nama', 'harga', 'gambar', 'pop', 'tiktok', 'shopee'];
+
+    public function getHargaAttribute($value)
+    {
+        return (float) $value;
+    }
+
 }
+
+

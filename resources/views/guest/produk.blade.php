@@ -28,41 +28,47 @@
                 </div>
             </div>
         </div>
+        
         <div class="row px-xl-5 pb-3">
-            @foreach (range(1, 8) as $i)
+            @foreach ($products as $product)
                 <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-                    <div class="card product-item border-0 mb-4">
+                    <div class="card product-item border-0 mb-4 shadow-sm">
+                        
+                        <!-- Product Image -->
                         <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                            <img class="img-fluid w-100" src="{{ asset('guest/img/product-' . $i . '.jpg') }}" alt="">
+                            <img class="img-fluid custom-img" src="{{ asset('storage/' . $product->gambar) }}" alt="{{ $product->nama }}">
                         </div>
-                        <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                            <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
-                            <div class="d-flex justify-content-center">
-                                <h6>Rp. 123.00</h6>
-                                <h6 class="text-muted ml-2"><del> <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>Rp. 123.00</del></h6>
+        
+                        <!-- Product Info -->
+                        <div class="card-body text-center p-0 pt-3 pb-2">
+                            <h6 class="text-truncate mb-2">{{ $product->nama }}</h6>
+                            <h6 class="mb-0 text-primary">Rp {{ number_format((float) $product->harga, 0, ',', '.') }}</h6>
+                        </div>
+        
+                        <!-- Dropdown in Footer -->
+                        <div class="card-footer bg-light border p-2">
+                            <div class="dropdown">
+                                <button class="btn btn-sm btn-custom dropdown-toggle w-100" type="button" id="dropdownMenuButton{{ $product->id }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Beli Disini
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton{{ $product->id }}">
+                                    @if($product->tiktok)
+                                        <a class="dropdown-item" href="{{ $product->tiktok }}" target="_blank">TikTok Shop</a>
+                                    @endif
+                                    @if($product->shopee)
+                                        <a class="dropdown-item" href="{{ $product->shopee }}" target="_blank">Shopee</a>
+                                    @endif
+                                </div>
                             </div>
                         </div>
-                        <div class="card-footer d-flex justify-content-between bg-light border">
-                            <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View
-                                Detail</a>
-                            <a href="" class="btn btn-sm text-dark p-0"><i
-                                    class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
-                        </div>
+        
                     </div>
                 </div>
             @endforeach
         </div>
+                
+        
+
         <div class="col-12 pb-1">
             <nav aria-label="Page navigation">
                 <ul class="pagination justify-content-center mb-3">
